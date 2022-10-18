@@ -87,13 +87,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     win.setLayoutParams(lp);
                     llMain.addView(win);
                     win.setTextColor(Color.BLUE);
-                    win.setTextSize(50);
+                    win.setTextSize(40);
 
                     if (word.equals(guess)) {
                         win.setText("you won");
                     }
                     else {
-                        win.setText("you lost");
+                        win.setText("you lost " + "\""+ word+"\"");
                     }
 
 
